@@ -164,6 +164,8 @@
     <Content Include="Views\Home\Index.cshtml" />
     <Content Include="Views\Home\Submit.cshtml" />
     <Content Include="Views\Home\SubmitPlus.cshtml" />
+    <Content Include="Views\Home\Submit2.cshtml" />
+    <Content Include="Views\Home\Submit2Plus.cshtml" />
   </ItemGroup>
   <ItemGroup>
     <Folder Include="App_Data\" />

@@ -49,5 +49,33 @@ namespace SEMYPROJECT.Controllers
             return View();
 
         }
+        public ActionResult Submit2()
+        {
+            return View();
+            
+        }
+
+        [HttpPost]
+        public ActionResult Submit2Plus()
+        {
+            //also ok
+            //string username = Request["user"];
+          //  string password = Request["pwd"];
+          //  int age = int.Parse(Request["age"]);
+
+
+            // i can also use--string username = Request.QueryString["user"]
+             string username = Request.Form["user"];
+              string password = Request.Form["pwd"];
+              int age = int.Parse(Request.Form["age"]);
+
+            string resultToDisplay = $"Name: {username}<br>" +
+                $"Password:{password}<br>" +
+                $"Age:{age}";
+
+            ViewBag.Result = resultToDisplay;
+            return View();
+
+        }
     }
 }
