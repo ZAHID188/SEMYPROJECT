@@ -16,6 +16,7 @@ namespace SEMYPROJECT
             routes.MapRoute(
                 name: "Default",
                 url: "{controller}/{action}/{id}",
+                //learn about id
                 defaults: new { controller = "Home", action = "Index", id = UrlParameter.Optional }
             );
         }
