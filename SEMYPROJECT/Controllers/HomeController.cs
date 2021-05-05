@@ -102,6 +102,17 @@ namespace SEMYPROJECT.Controllers
         {
             return View(_user);
         }
+
+        [HttpPost]
+        public ActionResult Submit2Plus4(string user,string pwd, int age)
+        {
+            string resultToDisplay = $"Name: {user}<br>" +
+               $"Password:{pwd}<br>" +
+               $"Age:{age}";
+
+            ViewBag.Result = resultToDisplay;
+            return View();
+        }
     }
 }
 

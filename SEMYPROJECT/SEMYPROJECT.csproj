@@ -169,6 +169,7 @@
     <Content Include="Views\Home\Submit2Plus.cshtml" />
     <Content Include="Views\Home\Submit2Plus2.cshtml" />
     <Content Include="Views\Home\Submit2Plus3.cshtml" />
+    <Content Include="Views\Home\Submit2Plus4.cshtml" />
   </ItemGroup>
   <ItemGroup>
     <Folder Include="App_Data\" />
