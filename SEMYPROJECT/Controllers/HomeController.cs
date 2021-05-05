@@ -98,9 +98,9 @@ namespace SEMYPROJECT.Controllers
            
         }
         [HttpPost]
-        public ActionResult Submit2Plus3([Bind(Include ="Username,Password,Age")] User1 user)
+        public ActionResult Submit2Plus3([Bind(Include ="user,pwd,age")] User1 _user)
         {
-            return View(user);
+            return View(_user);
         }
     }
 }

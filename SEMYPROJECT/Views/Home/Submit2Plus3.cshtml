@@ -1,41 +1,53 @@
 ﻿@model SEMYPROJECT.Models.User1
 
 @{
-                /**/
+    /**/
 
-                ViewBag.Title = "Submit2Plus3";
+    ViewBag.Title = "Submit2Plus3";
 }
 
 <h2>Submit2Plus3</h2>
+
+@if (Request.HttpMethod == "GET")
+{
+    <form action="Submit2Plus3" method="post">
+        <input type="text" name="user" placeholder="Username" /><br />
+        <input type="password" name="pwd" placeholder="Your pass" /><br />
+        <input type="number" name="age" placeholder="Your age" /><br />
+        <input type="submit" value="Submit" />
+    </form>
+}
+else if (Request.HttpMethod == "POST")
+{
 
 <div>
     <h4>User1</h4>
     <hr />
     <dl class="dl-horizontal">
         <dt>
-            @Html.DisplayNameFor(model => model.Username)
+            @Html.DisplayNameFor(model => model.user)
         </dt>
 
         <dd>
-            @Html.DisplayFor(model => model.Username)
+            @Html.DisplayFor(model => model.user)
         </dd>
 
         <dt>
-            @Html.DisplayNameFor(model => model.Password)
+            @Html.DisplayNameFor(model => model.pwd)
         </dt>
 
         <dd>
-            @Html.DisplayFor(model => model.Password)
+            @Html.DisplayFor(model => model.pwd)
         </dd>
 
         <dt>
-            @Html.DisplayNameFor(model => model.Age)
+            @Html.DisplayNameFor(model => model.age)
         </dt>
 
         <dd>
-            @Html.DisplayFor(model => model.Age)
+            @Html.DisplayFor(model => model.age)
         </dd>
 
     </dl>
 </div>
-
+}
