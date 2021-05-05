@@ -74,3 +74,7 @@ C:\Users\zahid\Desktop\clean\uni classes march 2021\asp.net framework\SEMYPROJEC
 C:\Users\zahid\Desktop\clean\uni classes march 2021\asp.net framework\SEMYPROJECT\SEMYPROJECT\obj\Debug\SEMYPROJECT.csproj.CopyComplete
 C:\Users\zahid\Desktop\clean\uni classes march 2021\asp.net framework\SEMYPROJECT\SEMYPROJECT\obj\Debug\SEMYPROJECT.dll
 C:\Users\zahid\Desktop\clean\uni classes march 2021\asp.net framework\SEMYPROJECT\SEMYPROJECT\obj\Debug\SEMYPROJECT.pdb
+C:\Users\zahid\Desktop\clean\uni classes march 2021\asp.net framework\SEMYPROJECT\SEMYPROJECT\bin\EntityFramework.dll
+C:\Users\zahid\Desktop\clean\uni classes march 2021\asp.net framework\SEMYPROJECT\SEMYPROJECT\bin\EntityFramework.SqlServer.dll
+C:\Users\zahid\Desktop\clean\uni classes march 2021\asp.net framework\SEMYPROJECT\SEMYPROJECT\bin\EntityFramework.xml
+C:\Users\zahid\Desktop\clean\uni classes march 2021\asp.net framework\SEMYPROJECT\SEMYPROJECT\bin\EntityFramework.SqlServer.xml
