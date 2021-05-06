@@ -26,7 +26,10 @@ namespace SEMYPROJECT.Controllers
         {
             ViewBag.Controller = RouteData.Values["controller"].ToString();
             ViewBag.Action = RouteData.Values["action"].ToString();
-            ViewBag.ID = RouteData.Values["id"].ToString();
+            // ViewBag.ID = RouteData.Values["id"].ToString();
+            ViewBag.ID = RouteData.Values["id"] as string;
+            // as= target type == convert the former object /variable to target-type,  if fails return null value
+            // we will not have to face any exception as like last time.
             return View();
         }
 
