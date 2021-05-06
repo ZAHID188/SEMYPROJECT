@@ -127,6 +127,8 @@
     <Compile Include="App_Start\BundleConfig.cs" />
     <Compile Include="App_Start\FilterConfig.cs" />
     <Compile Include="App_Start\RouteConfig.cs" />
+    <Compile Include="Areas\Area1st\Area1stAreaRegistration.cs" />
+    <Compile Include="Areas\Area1st\Controllers\TestinfoController.cs" />
     <Compile Include="Controllers\HomeController.cs" />
     <Compile Include="Global.asax.cs">
       <DependentUpon>Global.asax</DependentUpon>
@@ -194,6 +196,12 @@
     <Content Include="Content\bootstrap.css.map" />
     <Content Include="Content\bootstrap-theme.min.css.map" />
     <Content Include="Content\bootstrap-theme.css.map" />
+    <Content Include="Areas\Area1st\Views\web.config" />
+    <Content Include="Areas\Area1st\Views\_ViewStart.cshtml" />
+    <Content Include="Areas\Area1st\Views\Shared\_Layout.cshtml" />
+    <Content Include="Areas\Area1st\Views\Testinfo\Index.cshtml" />
+    <Content Include="Areas\Area1st\Views\Testinfo\Index1.cshtml" />
+    <Content Include="Areas\Area1st\Views\Testinfo\Index2.cshtml" />
     <None Include="Scripts\jquery-3.3.1.intellisense.js" />
     <Content Include="Scripts\bootstrap.js" />
     <Content Include="Scripts\bootstrap.min.js" />
@@ -240,6 +248,7 @@
   </ItemGroup>
   <ItemGroup>
     <Folder Include="App_Data\" />
+    <Folder Include="Areas\Area1st\Models\" />
   </ItemGroup>
   <ItemGroup>
     <None Include="packages.config" />
