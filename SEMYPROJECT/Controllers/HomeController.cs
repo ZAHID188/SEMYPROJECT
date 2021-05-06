@@ -22,6 +22,14 @@ namespace SEMYPROJECT.Controllers
             
         }
 
+        public ActionResult DisplayRouteInfo(string id)
+        {
+            ViewBag.Controller = RouteData.Values["controller"].ToString();
+            ViewBag.Action = RouteData.Values["action"].ToString();
+            ViewBag.ID = RouteData.Values["id"].ToString();
+            return View();
+        }
+
         public ActionResult About()
         {
             ViewBag.Message = "Your application description page.";
