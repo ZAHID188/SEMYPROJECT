@@ -11,7 +11,15 @@ namespace SEMYPROJECT.Areas.Area1st.Controllers
         // GET: Area1st/Testinfo
         public ActionResult Index(string id)
         {
-            return View();
+            if (id == null)
+            {
+                return View();
+            }
+            else
+            {
+                return View(id);
+            }
+            
         }
     }
 }

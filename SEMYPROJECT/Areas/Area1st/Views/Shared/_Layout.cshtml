@@ -30,6 +30,10 @@
         <hr />
         <footer>
             <p>&copy; @DateTime.Now.Year - My ASP.NET Application</p>
+            area: <b>@ViewContext.Controller.ControllerContext.RouteData.DataTokens["area"] as string</b><br />
+            controller:<b> @ViewContext.Controller.ControllerContext.RouteData.Values["controller"].ToString()</b><br />
+            Action: <b> @ViewContext.Controller.ControllerContext.RouteData.Values["action"].ToString()</b><br />
+            Id: <b> @ViewContext.Controller.ControllerContext.RouteData.Values["id"] as string</b>
         </footer>
     </div>
 
