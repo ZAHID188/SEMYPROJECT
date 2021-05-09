@@ -29,8 +29,13 @@
         @RenderBody()
         <hr />
         <footer>
+
+            @* we can also use @ViewContext.RouteData.DataTokens["area"] both are same*@
+            a-1:@ViewContext.RouteData.DataTokens["area"]
+
+
             <p>&copy; @DateTime.Now.Year - My ASP.NET Application</p>
-            area: <b>@ViewContext.Controller.ControllerContext.RouteData.DataTokens["area"] as string</b><br />
+            area: <b>@ViewContext.RouteData.DataTokens["area"]</b><br />
             controller:<b> @ViewContext.Controller.ControllerContext.RouteData.Values["controller"].ToString()</b><br />
             Action: <b> @ViewContext.Controller.ControllerContext.RouteData.Values["action"].ToString()</b><br />
             Id: <b> @ViewContext.Controller.ControllerContext.RouteData.Values["id"] as string</b>
