@@ -4,8 +4,11 @@
     <meta charset="utf-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>@ViewBag.Title - My ASP.NET Application</title>
-    @Styles.Render("~/Content/css")
-    @Scripts.Render("~/bundles/modernizr")
+   @*@Styles.Render("~/Content/css")
+    @Scripts.Render("~/bundles/modernizr")  *@
+
+    @Styles.Render(VirtualPathStrings.BootstrapCss)
+    @Styles.Render(VirtualPathStrings.Modernizr)
 
     <style>
          img#yzu {
@@ -18,30 +21,30 @@
 </head>
 <body>
     <div class="container ">
-          <img  id="yzu" src="~/images/yzu2.jpg" />
-       </div>
-    
-      <div class="navbar navbar-inverse ">
-          @*removed from avobe : navbar-fixed-top*@
-          <div class="container">
-              <div class="navbar-header">
-                  <button type="button" class="navbar-toggle" data-toggle="collapse" data-target=".navbar-collapse">
-                      <span class="icon-bar"></span>
-                      <span class="icon-bar"></span>
-                      <span class="icon-bar"></span>
-                  </button>
-                  @Html.ActionLink("Application name", "Index", "Home", new { area = "" }, new { @class = "navbar-brand" })
-              </div>
-              <div class="navbar-collapse collapse">
-                  <ul class="nav navbar-nav">
-                      <li>@Html.ActionLink("Home", "Index", "Home")</li>
-                      <li>@Html.ActionLink("About", "About", "Home")</li>
-                      <li>@Html.ActionLink("Contact", "Contact", "Home")</li>
-                      <li>@Html.ActionLink("Submit", "Submit2", "Home")</li>
-                  </ul>
-              </div>
-          </div>
-      </div>
+        <img id="yzu" src="~/images/yzu2.jpg" />
+    </div>
+
+    <div class="navbar navbar-inverse ">
+        @*removed from avobe : navbar-fixed-top*@
+        <div class="container">
+            <div class="navbar-header">
+                <button type="button" class="navbar-toggle" data-toggle="collapse" data-target=".navbar-collapse">
+                    <span class="icon-bar"></span>
+                    <span class="icon-bar"></span>
+                    <span class="icon-bar"></span>
+                </button>
+                @Html.ActionLink("Application name", "Index", "Home", new { area = "" }, new { @class = "navbar-brand" })
+            </div>
+            <div class="navbar-collapse collapse">
+                <ul class="nav navbar-nav">
+                    <li>@Html.ActionLink("Home", "Index", "Home")</li>
+                    <li>@Html.ActionLink("About", "About", "Home")</li>
+                    <li>@Html.ActionLink("Contact", "Contact", "Home")</li>
+                    <li>@Html.ActionLink("Submit", "Submit2", "Home")</li>
+                </ul>
+            </div>
+        </div>
+    </div>
     <div class="container body-content">
         @RenderBody()
         <hr />
@@ -50,8 +53,10 @@
         </footer>
     </div>
 
-    @Scripts.Render("~/bundles/jquery")
-    @Scripts.Render("~/bundles/bootstrap")
+    @* @Scripts.Render("~/bundles/jquery")
+        @Scripts.Render("~/bundles/bootstrap")*@
+    @Scripts.Render(VirtualPathStrings.jQuery)
+    @Scripts.Render(VirtualPathStrings.Bootstrap)
     @RenderSection("scripts", required: false)
 </body>
 </html>

@@ -1,6 +1,6 @@
 ﻿using System.Web;
 using System.Web.Optimization;
-using SE2018.Public;
+using SEMYPROJECT.Public;
 
 namespace SEMYPROJECT
 {

@@ -3,7 +3,7 @@ using System.Collections.Generic;
 using System.Linq;
 using System.Web;
 
-namespace SE2018.Public
+namespace SEMYPROJECT.Public
 {
     //static class just provide function, and it is  
     // not designed for initialize objects!!
