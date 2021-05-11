@@ -1,4 +1,5 @@
-﻿using System;
+﻿using SEMYPROJECT.Models;
+using System;
 using System.Collections.Generic;
 using System.Linq;
 using System.Web;
@@ -11,6 +12,9 @@ namespace SEMYPROJECT.Areas.Area1st.Controllers
         // GET: Area1st/Testinfo
         public ActionResult Index(string id)
         {
+
+
+        
             if (id == null)
             {
                 return View();

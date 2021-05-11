@@ -1,0 +1,41 @@
+﻿@*@using System.Web.Optimization;
+    @using SEMYPROJECT.Public;
+
+    @Scripts.Render(VirtualPathStrings.jQuery)  *@
+@* Razor for .cshtml : procceeded by an @@ *@
+
+@{ int i, j, k, sum;
+    i = 99;
+    j = -1;
+    k = 1;
+    sum = 0;
+    string name = " Zahidul alam";
+    string sex = "male";
+    int age = 22;
+    sum = i + j;
+}
+
+<b> Sum = @sum</b>
+@if (sex == "male")
+{
+    <b>Welcome genteleman @name</b>
+
+
+}
+else
+{
+    <b>Welcome Ms , @name</b>
+}
+
+
+<hr />
+
+
+@if (age < 20)
+{
+    <b> You are ypung </b>
+}
+else
+{
+    <b> youre old</b>
+}
