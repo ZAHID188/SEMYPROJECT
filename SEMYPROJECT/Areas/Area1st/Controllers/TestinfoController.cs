@@ -12,9 +12,14 @@ namespace SEMYPROJECT.Areas.Area1st.Controllers
         // GET: Area1st/Testinfo
         public ActionResult Index(string id)
         {
+            ViewBag.Xuser = new User1
+            {
+                user = "Rofiq",
+                pwd = "1234",
+                age = 24
+            };
 
 
-        
             if (id == null)
             {
                 return View();
