@@ -52,8 +52,41 @@ password:@u.pwd<br />
 age: @u.age<br />
 
 
-<div class="container">
-    <div class="row">
+           <div class="container">
+               <div class="row">
+                   <div class="col-md-2">
+                       Time:
+                   </div>
+                   <div class="col-md-10">
+                       @DateTime.Now.ToString("t")
+                       <br />
+                       @DateTime.Now.ToString("T")
+                   </div>
 
-    </div>
-</div>
+                   <div class="col-md-2">
+                       Date:
+                   </div>
+                   <div class="col-md-10">
+                       @DateTime.Now.ToString("d")
+                       <br />
+                       @DateTime.Now.ToString("D")
+                   </div>
+
+               </div>
+
+               <div class="row">
+                   <div class="col-md-2">
+                     Welcome:
+                   </div>
+                   <div class="col-md-10">
+                       @if (DateTime.Now.Hour < 12)
+                       {
+                           <span>Good morning</span>
+                       }
+                       else if (DateTime.Now.Hour < 13 && DateTime.Now.Hour > 12)
+                       {
+                           <span>Good noon</span>
+                       }
+                   </div>
+               </div>
+              
