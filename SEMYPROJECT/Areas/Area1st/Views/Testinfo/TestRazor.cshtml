@@ -51,6 +51,10 @@ name:@u.user<br />
 password:@u.pwd<br />
 age: @u.age<br />
 
+@{ 
+    int nh = DateTime.Now.Hour;
+}
+
 
            <div class="container">
                <div class="row">
@@ -74,18 +78,28 @@ age: @u.age<br />
 
                </div>
 
+
+               @*for each row there is 12 col if i take 4 col in 1st div i can take no more than 8 col*@
                <div class="row">
-                   <div class="col-md-2">
+                   <div class="col-md-4">
                      Welcome:
                    </div>
-                   <div class="col-md-10">
-                       @if (DateTime.Now.Hour < 12)
+                   <div class="col-md-8">
+                       @if (nh < 12 && nh>6)
                        {
                            <span>Good morning</span>
                        }
-                       else if (DateTime.Now.Hour < 13 && DateTime.Now.Hour > 12)
+                       else if (nh < 13 && nh > 12)
                        {
                            <span>Good noon</span>
+                       }
+                       else if (nh < 18 && nh > 13)
+                       {
+                           <span>Good afternoon!</span>
+                       }
+                       else
+                       {
+                           <span>Good eve/night</span>
                        }
                    </div>
                </div>
