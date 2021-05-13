@@ -6,3 +6,31 @@
 <h2>Index2</h2>
 <h3>This is a index2</h3>
 
+<div class="row">
+    <div class="col-md-3">
+        Triangles:
+    </div>
+    <div class="col-md-9">
+        @for (int m = 1; m <= 6; m++)
+        {
+            for (int n = 1; n <= m; n++)
+            {
+        <span><>&emsp;</span>
+            }
+            <br />
+        }
+    </div>
+    <div class="col-md-9">
+        @for (int m1 = 1; m1 <= 6; m1++)
+        {
+            for (int n1 = 1; n1 <= m1; n1++)
+            {
+                <span>@m1*@n1=@(m1 * n1) &emsp;</span>
+                int product = m1 * n1;
+                <span>--@product &nbsp; </span>
+
+            }
+            <br />
+        }
+    </div>
+</div>
