@@ -4,19 +4,83 @@
     <meta charset="utf-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>@ViewBag.Title - My ASP.NET Application</title>
-   @*@Styles.Render("~/Content/css")
-    @Scripts.Render("~/bundles/modernizr")  *@
+    <style type="text/css">
 
+        b {
+            color: red;
+        }
+
+        .red {
+            color: red;
+            font-weight: bold;
+        }
+
+        body {
+            margin-top: 2px;
+            margin-bottom: 2px;
+        }
+
+        .leftMenu {
+            margin-right: -15px;
+            padding-bottom: 0;
+        }
+
+            .leftMenu :first-child {
+                margin-top: 0;
+            }
+
+            .leftMenu .list-group {
+                margin-bottom: 0;
+                border-radius: 0;
+            }
+
+            .leftMenu .list-group-item {
+                font-size: 14px;
+                margin-left: -34px;
+                margin-right: -34px;
+                padding-top: 7px;
+                padding-bottom: 7px;
+            }
+
+                .leftMenu .list-group-item:first-child {
+                    margin-top: -15px;
+                }
+
+                .leftMenu .list-group-item:last-child {
+                    margin-bottom: -15px;
+                }
+
+                .leftMenu .list-group-item:hover {
+                    background-color: #fbe77a;
+                    color: red;
+                }
+
+                .leftMenu .list-group-item:focus {
+                    color: red;
+                }
+    </style>
+
+    @*@Styles.Render("~/Content/css")
+        @Scripts.Render("~/bundles/modernizr")  *@
+    @Styles.Render(VirtualPathStrings.jQueryUICss)
+    @Styles.Render(VirtualPathStrings.jQueryUI)
+    @Styles.Render(VirtualPathStrings.jQueryAjax)
     @Styles.Render(VirtualPathStrings.BootstrapCss)
     @Scripts.Render(VirtualPathStrings.Modernizr)
+    @Styles.Render(VirtualPathStrings.jQueryValidate)
 
+    @* @Scripts.Render("~/bundles/jquery")
+        @Scripts.Render("~/bundles/bootstrap")*@
+    @Scripts.Render(VirtualPathStrings.jQuery)
+    @Scripts.Render(VirtualPathStrings.Bootstrap)
+    @RenderSection("scripts", required: false)
     <style>
-         img#yzu {
+        img#yzu {
             width: 100%;
             height: 10vw;
         }
         /* class="img-responsive center-block "*/
-        
+
     </style>
 </head>
 <body>
@@ -47,17 +111,23 @@
         </div>
     </div>
     <div class="container body-content">
-        @RenderBody()
+        <div class="col-md-3">
+            <div class="leftMenu panel panel-success" >
+                <h3 class="btn-success">The sixth class</h3>
+            </div>
+            @*1.o1.30*@`
+        </div>
+        <div class="col-md-9">
+
+
+            @RenderBody()
+        </div>
         <hr />
         <footer>
             <p>&copy; @DateTime.Now.Year - My ASP.NET Application</p>
         </footer>
     </div>
 
-    @* @Scripts.Render("~/bundles/jquery")
-        @Scripts.Render("~/bundles/bootstrap")*@
-    @Scripts.Render(VirtualPathStrings.jQuery)
-    @Scripts.Render(VirtualPathStrings.Bootstrap)
-    @RenderSection("scripts", required: false)
+   
 </body>
 </html>
