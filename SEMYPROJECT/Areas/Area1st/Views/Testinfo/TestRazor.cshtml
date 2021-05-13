@@ -103,4 +103,26 @@ age: @u.age<br />
                        }
                    </div>
                </div>
+               <div class="row">
+                   <div class="col-md-1">
+                       List:
+                   </div>
+                   <div class="col-md-11">
+                       @{ 
+                           List<string> list = new List<string>();
+                           for (int x=1; x <= 16; x++)
+                           {
+                               list.Add($"Item{x:d2}");
+                           }
+                       }
+                       <h3>Use foreach-loop:</h3>
+                       <ol>
+                           @foreach (string e in list)
+                           { 
+                           <li>@e</li>
+                           }
+                       </ol>
+
+                   </div>
+               </div>
               
