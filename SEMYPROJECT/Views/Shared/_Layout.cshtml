@@ -168,7 +168,24 @@
             <p>&copy; @DateTime.Now.Year - My ASP.NET Application</p>
         </footer>
     </div>
+    <script>
+        //jquery function
+        // or we can use it same-- $(document).ready(function){...... }
+        $(function () {
+            let menu = $(".leftMenu");//select class = leftmenu elements
+            //call jquery function .accordion 
+            menu.accordion({ heightStyle: "content", collapsible: true });
+            $("#mainWindow").css({ minHeight: menu.height })
 
+
+        });
+        function OnFailure(xhr) {
+            $("body").html(xhr.responseText);
+        }
+
+
+     
+    </script>
    
 </body>
 </html>
