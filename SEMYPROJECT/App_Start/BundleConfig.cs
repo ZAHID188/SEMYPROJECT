@@ -14,7 +14,9 @@ namespace SEMYPROJECT
             bundles.Add(new ScriptBundle(VirtualPathStrings.jQuery).Include(
                         "~/Scripts/jquery-{version}.js"));
             bundles.Add(new ScriptBundle(VirtualPathStrings.jQueryAjax).Include(
-                        "~/Scripts/jquery.unobtrusive*")); 
+                        "~/Scripts/jquery.unobtrusive*"));
+            bundles.Add(new ScriptBundle(VirtualPathStrings.jQueryMinAzax).Include(
+                        "~/Scripts/jquery.unobtrusive-ajax.min.js"));
 
             bundles.Add(new ScriptBundle(VirtualPathStrings.jQueryValidate).Include(
                         "~/Scripts/jquery.validate*"));
