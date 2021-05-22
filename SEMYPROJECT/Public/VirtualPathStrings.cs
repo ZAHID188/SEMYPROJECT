@@ -19,10 +19,6 @@ namespace SEMYPROJECT.Public
         {
             get => "~/bundles/jquery/unobtrusive-ajax";
         }
-        public static string jQueryMinAzax
-        {
-            get => "~/bundles/jquery/unobtrusive-ajax.min.js";
-        }
         public static string jQueryValidate
         {
             get => "~/bundles/jquery/validate";

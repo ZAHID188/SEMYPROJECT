@@ -158,3 +158,5 @@ D:\Desktop\uni classes march 2021\asp.net framework\SEMYPROJECT\SEMYPROJECT\obj\
 D:\Desktop\uni classes march 2021\asp.net framework\SEMYPROJECT\SEMYPROJECT\obj\Debug\SEMYPROJECT.csproj.CopyComplete
 D:\Desktop\uni classes march 2021\asp.net framework\SEMYPROJECT\SEMYPROJECT\obj\Debug\SEMYPROJECT.dll
 D:\Desktop\uni classes march 2021\asp.net framework\SEMYPROJECT\SEMYPROJECT\obj\Debug\SEMYPROJECT.pdb
+D:\Desktop\uni classes march 2021\asp.net framework\SEMYPROJECT\SEMYPROJECT\bin\Scripts\bootstrap.js
+D:\Desktop\uni classes march 2021\asp.net framework\SEMYPROJECT\SEMYPROJECT\bin\zh-Hans\System.Web.Optimization.resources.dll
