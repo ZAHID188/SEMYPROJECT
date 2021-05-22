@@ -1,54 +1,48 @@
-﻿using SEMYPROJECT.Public; // Alt+Enter, Enter to using ....
-using System;
+﻿using System;
 using System.Collections.Generic;
 using System.Linq;
 using System.Web;
 using System.Web.Optimization;
+using SEMYPROJECT.Public;
 
 namespace SEMYPROJECT
 {
     public class BundleConfig
     {
-        // Alt + Enter Key to prompt for using namespace 
-        //    : using System.Web.Optimization;
-        //   Then press Enter again!
+
+        //alt+enter=
+        // For more information on bundling, visit https://go.microsoft.com/fwlink/?LinkId=301862
         public static void RegisterBundles(BundleCollection bundles)
         {
-            //❶ ScriptBundle is used for *.js library
-            //jQuery
             bundles.Add(new ScriptBundle(VirtualPathStrings.jQuery)
-              .Include("~/Scripts/jquery-{version}.js"));
-            //jQuery Ajax
+                  .Include("~/Scripts/jquery-{version}.js"));
             bundles.Add(new ScriptBundle(VirtualPathStrings.jQueryAjax)
-              .Include("~/Scripts/jquery.unobtrusive-ajax*"));
-            //jQuery Validate
+                .Include("~/Scripts/jquery.unobtrusive*"));
             bundles.Add(new ScriptBundle(VirtualPathStrings.jQueryValidate)
-              .Include("~/Scripts/jquery.validate*"));
-            //jQuery UI
+                .Include("~/Scripts/jquery.validate*"));
             bundles.Add(new ScriptBundle(VirtualPathStrings.jQueryUI)
-              .Include("~/Scripts/jquery-ui-{version}.js"));
-            //Modernizr
-            bundles.Add(new ScriptBundle(VirtualPathStrings.Modernizr)
-              .Include("~/Scripts/modernizr-{version}.js"));
-            //Bootstrap
-            bundles.Add(new ScriptBundle(VirtualPathStrings.Bootstrap)
-              .Include("~/Scripts/bootstrap.js",
-              "~/Scripts/respond.js"));
+                .Include("~/Scripts/jquery-ui-{version}.js"));
 
-            //❷ StyleBundle is used for *.css files
-            //jQuery UI css file
-            bundles.Add(new StyleBundle(VirtualPathStrings.jQueryUICss)
-              .Include("~/Content/themes/base/all.css"));
-            //Bootstrap css file
+            // Use the development version of Modernizr to develop with and learn from. Then, when you're
+            // ready for production, use the build tool at https://modernizr.com to pick only the tests you need.
+            bundles.Add(new ScriptBundle(VirtualPathStrings.Modernizr).Include(
+                        "~/Scripts/modernizr-*"));
+
+            bundles.Add(new ScriptBundle(VirtualPathStrings.Bootstrap).Include(
+                      "~/Scripts/bootstrap.js",
+                      "~/Scripts/respond.js"));
+
             bundles.Add(new StyleBundle(VirtualPathStrings.BootstrapCss).Include(
-              "~/Content/bootstrap.css",
-              "~/Content/bootstrap-theme.css",
-              "~/Content/Site.css")); // 
+                      "~/Content/bootstrap.css",
+                      "~/Content/bootstrap-theme.css",
+                      "~/Content/Site.css"));
 
-            //BundleTable.EnableOptimizations = true; 
-            //  ▲ set to true, means the system will use the bundles
-            //  with minimized *.min.js files are used and
-            //  the overloading of webpages will be a short faster.
+            bundles.Add(new StyleBundle(VirtualPathStrings.jQueryUICss).Include(
+                "~/Content/themes/base/all.css"));
+            
+
+                
+
             BundleTable.EnableOptimizations = true;
         }
     }
