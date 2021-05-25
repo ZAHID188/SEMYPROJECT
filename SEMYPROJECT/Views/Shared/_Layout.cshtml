@@ -71,17 +71,7 @@
                 }
     </style>
 
-    @*<link href="~/Content/Site.css" rel="stylesheet" type="text/css" />
-        <link href="~/Content/bootstrap.min.css" rel="stylesheet" type="text/css" />
-        <script src="~/Scripts/modernizr-2.8.3.js"></script> * @
-    @Styles.Render(VirtualPathStrings.jQueryUICss)
-    @Styles.Render(VirtualPathStrings.BootstrapCss)
-    @Scripts.Render(VirtualPathStrings.Modernizr)
-    @Scripts.Render(VirtualPathStrings.jQuery)
-    @Scripts.Render(VirtualPathStrings.Bootstrap)
-    @Scripts.Render(VirtualPathStrings.jQueryUI)
-    @Scripts.Render(VirtualPathStrings.jQueryAjax)
-    @*  @Scripts.Render(VirtualPathStrings.jQueryValidate)*@
+ 
      
     
     @* 1st way  *@
@@ -179,7 +169,7 @@
                 <h3 class="btn-success">The sixth class</h3>
                 <div class="list-group">
                     @Ajax.ActionLink("Razor    (ajax)", "Index", "Testinfo", new { area = "Area1st", id = "TestRazor" }, ajaxOptions, new { @class = "list-group-item" })
-                    @Ajax.ActionLink("Index    (ajax)", "Index", "Testinfo", new { area = "Area1st", id = "Index" }, ajaxOptions, new { @class = "list-group--item" })
+                    @Ajax.ActionLink("Index    (ajax)", "Index", "Testinfo", new { area = "Area1st", id = "Index" }, ajaxOptions, new { @class = "list-group-item" })
                     @Ajax.ActionLink("Index1   (ajax)", "Index", "Testinfo", new { area = "Area1st", id = "Index1" }, ajaxOptions, new { @class = "list-group-item" })
                     @Ajax.ActionLink("Index2   (ajax)", "Index", "Testinfo", new { area = "Area1st", id = "Index2" }, ajaxOptions, new { @class = "list-group-item" })
                     @Ajax.ActionLink("Bootstrap(ajax)", "Index", "Testinfo", new { area = "Area1st", id = "Bootstrap" }, ajaxOptions, new { @class = "list-group-item" })
