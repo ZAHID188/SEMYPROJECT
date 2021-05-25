@@ -30,5 +30,13 @@ namespace SEMYPROJECT.Areas.Area1st.Controllers
             }
             
         }
+        public ActionResult  AjaxOrNonAjax()
+        {
+            return View();
+        }
+        public ActionResult Page()
+        {
+            return View();
+        }
     }
 }

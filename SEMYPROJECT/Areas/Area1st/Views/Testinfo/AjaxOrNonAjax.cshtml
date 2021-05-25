@@ -1,0 +1,15 @@
+﻿
+@{
+    ViewBag.Title = "AjaxOrNonAjax";
+}
+
+<h2>AjaxOrNonAjax</h2>
+
+@if(Request.IsAjaxRequest())
+{
+    <span>This is an <b>ajax</b> request.</span>
+}
+else
+{
+    <span>This is an <b>Non ajax request</b></span>
+}
