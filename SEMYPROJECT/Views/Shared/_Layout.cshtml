@@ -179,13 +179,15 @@
                     @Html.ActionLink("Index1   html", "Index", "Testinfo", new { area = "Area1st", id = "Index1" }, new { @class = "list-group-item" })
                     @Html.ActionLink("Index2   html", "Index", "Testinfo", new { area = "Area1st", id = "Index2" }, new { @class = "list-group-item" })
                     @Html.ActionLink("Bootstrap html", "Index", "Testinfo", new { area = "Area1st", id = "Bootstrap" }, new { @class = "list-group-item" })
-                    
+
+
+                    @Html.ActionLink("AjaxOrNonAjax ", "AjaxOrNonAjax", "Testinfo", new { area = "Area1st", id = "" }, new { @class = "list-group-item" })
+                    @Ajax.ActionLink("AjaxOrNonAjax(ajax)", "AjaxOrNonAjax", "Testinfo", new { area = "Area1st", id = "" }, ajaxOptions, new { @class = "list-group-item" })
                 </div>
 
                 <h3 class="btn-success">The 3rd class</h3>
                 <div class="list-group">
-                    @Html.ActionLink("AjaxOrNonAjax ", "AjaxOrNonAjax", "Testinfo", new { area = "Area1st", id = "" }, new { @class = "list-group-item" })
-                    @Ajax.ActionLink("AjaxOrNonAjax(ajax)", "AjaxOrNonAjax", "Testinfo", new { area = "Area1st", id = "" }, ajaxOptions, new { @class = "list-group-item" })
+                   
                 </div>
 
                 <h3 class="btn-success">The 4th class</h3>

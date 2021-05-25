@@ -30,13 +30,24 @@ namespace SEMYPROJECT.Areas.Area1st.Controllers
             }
             
         }
-        public ActionResult  AjaxOrNonAjax()
+
+        // for ajax request we just need to
+        // return partial view(layout will be neglected)
+
+            //return View() == returns with the layout
+        public ActionResult AjaxOrNonAjax()
         {
-            return View();
+            // if the request is in the ajax then we don't need to show the layout .
+            // so we used this condition.
+            if(Request.IsAjaxRequest()) 
+                return PartialView();
+            else
+                return View();
         }
-        public ActionResult Page()
-        {
-            return View();
-        }
+           
+          
+         
+            
+       
     }
 }
