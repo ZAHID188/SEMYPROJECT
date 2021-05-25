@@ -187,7 +187,12 @@
 
                 <h3 class="btn-success">The 3rd class</h3>
                 <div class="list-group">
-                   
+                    
+                    @Ajax.ActionLink("Index    (ajax)", "AjaxOrNonAjax", "Testinfo", new { area = "Area1st", id = "Index" }, ajaxOptions, new { @class = "list-group-item" })
+                    @Ajax.ActionLink("Index1   (ajax)", "AjaxOrNonAjax", "Testinfo", new { area = "Area1st", id = "Index1" }, ajaxOptions, new { @class = "list-group-item" })
+                    @Ajax.ActionLink("Index2   (ajax)", "AjaxOrNonAjax", "Testinfo", new { area = "Area1st", id = "Index2" }, ajaxOptions, new { @class = "list-group-item" })
+                    @Ajax.ActionLink("Bootstrap(ajax)", "AjaxOrNonAjax", "Testinfo", new { area = "Area1st", id = "Bootstrap" }, ajaxOptions, new { @class = "list-group-item" })
+
                 </div>
 
                 <h3 class="btn-success">The 4th class</h3>
