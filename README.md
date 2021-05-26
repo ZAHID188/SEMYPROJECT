@@ -1,3 +1,3 @@
 # SEMYPROJECT
-This a simple Asp.net project taught by Our university teacher.@Yangzhou university.
+This a simple Asp.net project taught by Our university teacher.@Yangzhou university
 , Jiangsu, china. 
