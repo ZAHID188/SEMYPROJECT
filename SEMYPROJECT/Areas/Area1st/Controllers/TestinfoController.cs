@@ -37,12 +37,21 @@ namespace SEMYPROJECT.Areas.Area1st.Controllers
             //return View() == returns with the layout
         public ActionResult AjaxOrNonAjax(string id)
         {
+            // for the testrazor view we need this.
+         
+
+
             // if the request is in the ajax then we don't need to show the layout .
             // so we used this condition.
-            if(Request.IsAjaxRequest()) 
+            if (Request.IsAjaxRequest()) 
                 return PartialView(id);
             else
                 return View(id);
+        }
+        public ActionResult Ajax1()
+        {
+            string s = $"{DateTime.Now.ToString("f")}";
+            return Content(s);
         }
            
           

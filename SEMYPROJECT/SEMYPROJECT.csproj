@@ -207,6 +207,7 @@
     <Content Include="Areas\Area1st\Views\Testinfo\Bootstrap.cshtml" />
     <Content Include="Areas\Area1st\Views\Testinfo\AjaxOrNonAjax.cshtml" />
     <Content Include="Areas\Area1st\Views\Testinfo\Page.cshtml" />
+    <Content Include="Areas\Area1st\Views\Testinfo\AjaxDemo.cshtml" />
     <None Include="Scripts\jquery-3.3.1.intellisense.js" />
     <Content Include="Scripts\bootstrap.js">
       <CopyToOutputDirectory>Always</CopyToOutputDirectory>

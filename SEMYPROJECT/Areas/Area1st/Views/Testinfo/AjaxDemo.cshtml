@@ -1,0 +1,51 @@
+﻿
+@{
+    ViewBag.Title = "AjaxDemo";
+}
+
+<h2>AjaxDemo</h2>
+
+<h3 class="btn-danger"> Basic usage of Ajax jquery directly</h3>
+<div id="div1"></div>
+<script>
+    $.ajax({
+        url: '@Url.Action("Ajax1")',
+        success: function (result) {
+            $("#div1").html(result);
+        },
+        error: function () {
+            alert(" There is an Error");
+        }
+    })
+</script>
+<h3 class="btn-danger"> Basic usage of using hyperlink</h3>
+<p>Click the following Link</p>
+@{
+    AjaxOptions ajax2 = new AjaxOptions
+    {
+        UpdateTargetId = "div2",
+        OnFailure = "ShowError('Error ocurs while updating div2');"
+    };
+}
+@Ajax.ActionLink("Get the Current Date and time", "Ajax1", ajax2)
+@Ajax.ActionLink("Get Razor", "Index", new { id = "TestRazor" }, ajax2, new { @style = "margin-left:20px;" })
+<div id="div2"></div>
+
+@* we will learn later about post*@
+@using (Ajax.BeginForm(new AjaxOptions {
+
+    UpdateTargetId = "div3",
+    Url = Url.Action("Ajax1"),
+    OnFailure = "ShowError(' There is an error  while updating div3');"
+}))
+
+{
+    <button type="submit"> get the date and time</button>
+}
+<div id="div3"></div>
+<script>
+    function ShowError(errorInfo) {
+        alert(errorInfo);
+
+    }
+</script>
