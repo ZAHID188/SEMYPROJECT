@@ -188,14 +188,16 @@
                 <h3 class="btn-success">The 3rd class</h3>
                 <div class="list-group">
 
-                    @* Razor page is not possible to make because it's only in index page if i use Partial view at index in the Tesinfocontroller then it will run *@
-                    @Ajax.ActionLink("Razor    (ajax)", "AjaxOrNonAjax", "Testinfo", new { area = "Area1st", id = "TestRazor" }, ajaxOptions, new { @class = "list-group-item" })
+
 
                     @Ajax.ActionLink("Index    (ajax)", "AjaxOrNonAjax", "Testinfo", new { area = "Area1st", id = "Index" }, ajaxOptions, new { @class = "list-group-item" })
                     @Ajax.ActionLink("Index1   (ajax)", "AjaxOrNonAjax", "Testinfo", new { area = "Area1st", id = "Index1" }, ajaxOptions, new { @class = "list-group-item" })
                     @Ajax.ActionLink("Index2   (ajax)", "AjaxOrNonAjax", "Testinfo", new { area = "Area1st", id = "Index2" }, ajaxOptions, new { @class = "list-group-item" })
                     @Ajax.ActionLink("Bootstrap(ajax)", "AjaxOrNonAjax", "Testinfo", new { area = "Area1st", id = "Bootstrap" }, ajaxOptions, new { @class = "list-group-item" })
 
+
+                    @* Razor page is not possible to make because it's only in index page if i use Partial view at index in the Tesinfocontroller then it will run *@
+                    @Ajax.ActionLink("Razor    (ajax)", "AjaxOrNonAjax", "Testinfo", new { area = "Area1st", id = "TestRazor" }, ajaxOptions, new { @class = "list-group-item" })
                 </div>
 
                 <h3 class="btn-success">AjaxDemo</h3>
