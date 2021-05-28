@@ -15,7 +15,7 @@ namespace SEMYPROJECT.Models
     //初始化数据库对象  【注意base参数 可以对应根下的Web.config中的连接字符串】
     //   Constructor for connecting database by connectionString's name or 
     //      a connection string.
-    public TestDbContext() : base("SE2018Db") //改了串名
+    public TestDbContext() : base("SEMYPROJECTdb") //改了串名
     {
       //Database.SetInitializer<TestDbContext>(null);
     }
@@ -77,7 +77,7 @@ namespace SEMYPROJECT.Models
     public DbSet<User> Users { get; set; }
     public DbSet<RoleWithControllerAction> RoleWithControllerActions { get; set; }
 
-    public System.Data.Entity.DbSet<SEMYPROJECT.ViewModels.LoginXUserEntity> LoginXUserEntities { get; set; }
+    //public System.Data.Entity.DbSet<SEMYPROJECT.ViewModels.LoginXUserEntity> LoginXUserEntities { get; set; }
 
     //public System.Data.Entity.DbSet<SEMYPROJECT.ViewModels.LoginXUserEntity> LoginXUserEntities { get; set; }
 

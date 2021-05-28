@@ -152,6 +152,7 @@
     <Compile Include="Models\TestDbContext.cs" />
     <Compile Include="Models\User.cs" />
     <Compile Include="Models\User1.cs" />
+    <Compile Include="Models\validators\ValidationStrings.cs" />
     <Compile Include="Models\XUser.cs" />
     <Compile Include="Models\YzuMajor.cs" />
     <Compile Include="Models\YzuSchool.cs" />
