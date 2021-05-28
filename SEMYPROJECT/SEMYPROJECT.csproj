@@ -133,9 +133,28 @@
     <Compile Include="Global.asax.cs">
       <DependentUpon>Global.asax</DependentUpon>
     </Compile>
+    <Compile Include="Models\Author.cs" />
+    <Compile Include="Models\BookCategory.cs" />
+    <Compile Include="Models\BookInfo.cs" />
     <Compile Include="Models\City.cs" />
+    <Compile Include="Models\Class.cs" />
+    <Compile Include="Models\County.cs" />
+    <Compile Include="Models\Course.cs" />
+    <Compile Include="Models\CourseType.cs" />
+    <Compile Include="Models\Gender.cs" />
+    <Compile Include="Models\Press.cs" />
     <Compile Include="Models\Province.cs" />
+    <Compile Include="Models\Role.cs" />
+    <Compile Include="Models\RoleWithControllerAction.cs" />
+    <Compile Include="Models\Score.cs" />
+    <Compile Include="Models\Student.cs" />
+    <Compile Include="Models\Test4Gloabal.cs" />
+    <Compile Include="Models\TestDbContext.cs" />
+    <Compile Include="Models\User.cs" />
     <Compile Include="Models\User1.cs" />
+    <Compile Include="Models\XUser.cs" />
+    <Compile Include="Models\YzuMajor.cs" />
+    <Compile Include="Models\YzuSchool.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
     <Compile Include="Public\VirtualPathStrings.cs" />
   </ItemGroup>
