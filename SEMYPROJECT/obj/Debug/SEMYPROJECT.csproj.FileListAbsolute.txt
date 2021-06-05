@@ -242,3 +242,5 @@ D:\Desktop\uni classes march 2021\asp.net framework\SEMYPROJECT\GitHub\SEMYPROJE
 D:\Desktop\uni classes march 2021\asp.net framework\SEMYPROJECT\GitHub\SEMYPROJECT\SEMYPROJECT\bin\Microsoft.CodeDom.Providers.DotNetCompilerPlatform.xml
 D:\Desktop\uni classes march 2021\asp.net framework\SEMYPROJECT\GitHub\SEMYPROJECT\SEMYPROJECT\bin\zh-Hans\System.Web.Optimization.resources.dll
 D:\Desktop\uni classes march 2021\asp.net framework\SEMYPROJECT\GitHub\SEMYPROJECT\SEMYPROJECT\obj\Debug\SEMYPROJECT.csproj.CopyComplete
+D:\Desktop\uni classes march 2021\asp.net framework\SEMYPROJECT\GitHub\SEMYPROJECT\SEMYPROJECT\obj\Debug\SEMYPROJECT.Migrations.createdb.resources
+D:\Desktop\uni classes march 2021\asp.net framework\SEMYPROJECT\GitHub\SEMYPROJECT\SEMYPROJECT\obj\Debug\SEMYPROJECT.csproj.GenerateResource.cache

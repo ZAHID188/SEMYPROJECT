@@ -124,6 +124,7 @@
     </Reference>
   </ItemGroup>
   <ItemGroup>
+    <Content Include="App_Code\TestDbInitialization.cs" />
     <Compile Include="App_Start\BundleConfig.cs" />
     <Compile Include="App_Start\FilterConfig.cs" />
     <Compile Include="App_Start\RouteConfig.cs" />
@@ -133,6 +134,11 @@
     <Compile Include="Global.asax.cs">
       <DependentUpon>Global.asax</DependentUpon>
     </Compile>
+    <Compile Include="Migrations\202105290710472_createdb.cs" />
+    <Compile Include="Migrations\202105290710472_createdb.designer.cs">
+      <DependentUpon>202105290710472_createdb.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Migrations\Configuration.cs" />
     <Compile Include="Models\Author.cs" />
     <Compile Include="Models\BookCategory.cs" />
     <Compile Include="Models\BookInfo.cs" />
@@ -230,6 +236,7 @@
     <Content Include="Areas\Area1st\Views\Testinfo\AjaxOrNonAjax.cshtml" />
     <Content Include="Areas\Area1st\Views\Testinfo\Page.cshtml" />
     <Content Include="Areas\Area1st\Views\Testinfo\AjaxDemo.cshtml" />
+    <Content Include="Models\TestDbInitialization.cs.bak" />
     <None Include="Scripts\jquery-3.3.1.intellisense.js" />
     <Content Include="Scripts\bootstrap.js">
       <CopyToOutputDirectory>Always</CopyToOutputDirectory>
@@ -286,6 +293,11 @@
     <None Include="packages.config" />
     <Content Include="Scripts\jquery-3.3.1.slim.min.map" />
     <Content Include="Scripts\jquery-3.3.1.min.map" />
+  </ItemGroup>
+  <ItemGroup>
+    <EmbeddedResource Include="Migrations\202105290710472_createdb.resx">
+      <DependentUpon>202105290710472_createdb.cs</DependentUpon>
+    </EmbeddedResource>
   </ItemGroup>
   <PropertyGroup>
     <VisualStudioVersion Condition="'$(VisualStudioVersion)' == ''">10.0</VisualStudioVersion>
