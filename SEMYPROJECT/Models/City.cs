@@ -7,7 +7,7 @@ using System.Web;
 
 namespace SEMYPROJECT.Models
 {
-    [Table("city")]
+    //[Table("city")]
     public class City
     {
         [Key]
@@ -34,6 +34,6 @@ namespace SEMYPROJECT.Models
         public virtual Province Province { set; get; }
 
         //★★ Newly added: The counties in the current city:
-       // public virtual ICollection<County> Counties { set; get; }
+        public virtual ICollection<County> Counties { set; get; }
     }
 }

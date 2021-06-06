@@ -244,3 +244,7 @@ D:\Desktop\uni classes march 2021\asp.net framework\SEMYPROJECT\GitHub\SEMYPROJE
 D:\Desktop\uni classes march 2021\asp.net framework\SEMYPROJECT\GitHub\SEMYPROJECT\SEMYPROJECT\obj\Debug\SEMYPROJECT.csproj.CopyComplete
 D:\Desktop\uni classes march 2021\asp.net framework\SEMYPROJECT\GitHub\SEMYPROJECT\SEMYPROJECT\obj\Debug\SEMYPROJECT.Migrations.createdb.resources
 D:\Desktop\uni classes march 2021\asp.net framework\SEMYPROJECT\GitHub\SEMYPROJECT\SEMYPROJECT\obj\Debug\SEMYPROJECT.csproj.GenerateResource.cache
+D:\Desktop\uni classes march 2021\asp.net framework\SEMYPROJECT\GitHub\SEMYPROJECT\SEMYPROJECT\obj\Debug\SEMYPROJECT.Migrations.createdb1.resources
+D:\Desktop\uni classes march 2021\asp.net framework\SEMYPROJECT\GitHub\SEMYPROJECT\SEMYPROJECT\obj\Debug\SEMYPROJECT.Migrations.createdb2.resources
+D:\Desktop\uni classes march 2021\asp.net framework\SEMYPROJECT\GitHub\SEMYPROJECT\SEMYPROJECT\obj\Debug\SEMYPROJECT.Migrations.createdb3.resources
+D:\Desktop\uni classes march 2021\asp.net framework\SEMYPROJECT\GitHub\SEMYPROJECT\SEMYPROJECT\obj\Debug\SEMYPROJECT.Migrations.createdb4.resources

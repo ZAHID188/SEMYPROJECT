@@ -9,7 +9,7 @@ namespace SEMYPROJECT.Models
 {
     //this is a codeFirstdb
 
-        [Table("templateinprovince")]
+    //    [Table("province")]
     public class Province
     {
         [Key]

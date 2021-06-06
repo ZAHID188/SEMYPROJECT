@@ -124,7 +124,6 @@
     </Reference>
   </ItemGroup>
   <ItemGroup>
-    <Content Include="App_Code\TestDbInitialization.cs" />
     <Compile Include="App_Start\BundleConfig.cs" />
     <Compile Include="App_Start\FilterConfig.cs" />
     <Compile Include="App_Start\RouteConfig.cs" />
@@ -138,7 +137,24 @@
     <Compile Include="Migrations\202105290710472_createdb.designer.cs">
       <DependentUpon>202105290710472_createdb.cs</DependentUpon>
     </Compile>
+    <Compile Include="Migrations\202106051937531_createdb1.cs" />
+    <Compile Include="Migrations\202106051937531_createdb1.designer.cs">
+      <DependentUpon>202106051937531_createdb1.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Migrations\202106060807483_createdb2.cs" />
+    <Compile Include="Migrations\202106060807483_createdb2.designer.cs">
+      <DependentUpon>202106060807483_createdb2.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Migrations\202106061108023_createdb3.cs" />
+    <Compile Include="Migrations\202106061108023_createdb3.designer.cs">
+      <DependentUpon>202106061108023_createdb3.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Migrations\202106061121418_createdb4.cs" />
+    <Compile Include="Migrations\202106061121418_createdb4.designer.cs">
+      <DependentUpon>202106061121418_createdb4.cs</DependentUpon>
+    </Compile>
     <Compile Include="Migrations\Configuration.cs" />
+    <Compile Include="Migrations\TestDbInitialization.cs" />
     <Compile Include="Models\Author.cs" />
     <Compile Include="Models\BookCategory.cs" />
     <Compile Include="Models\BookInfo.cs" />
@@ -236,7 +252,6 @@
     <Content Include="Areas\Area1st\Views\Testinfo\AjaxOrNonAjax.cshtml" />
     <Content Include="Areas\Area1st\Views\Testinfo\Page.cshtml" />
     <Content Include="Areas\Area1st\Views\Testinfo\AjaxDemo.cshtml" />
-    <Content Include="Models\TestDbInitialization.cs.bak" />
     <None Include="Scripts\jquery-3.3.1.intellisense.js" />
     <Content Include="Scripts\bootstrap.js">
       <CopyToOutputDirectory>Always</CopyToOutputDirectory>
@@ -286,6 +301,7 @@
     <Content Include="Views\Home\DisplayRouteInfo.cshtml" />
   </ItemGroup>
   <ItemGroup>
+    <Folder Include="App_Code\" />
     <Folder Include="App_Data\" />
     <Folder Include="Areas\Area1st\Models\" />
   </ItemGroup>
@@ -297,6 +313,18 @@
   <ItemGroup>
     <EmbeddedResource Include="Migrations\202105290710472_createdb.resx">
       <DependentUpon>202105290710472_createdb.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Migrations\202106051937531_createdb1.resx">
+      <DependentUpon>202106051937531_createdb1.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Migrations\202106060807483_createdb2.resx">
+      <DependentUpon>202106060807483_createdb2.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Migrations\202106061108023_createdb3.resx">
+      <DependentUpon>202106061108023_createdb3.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Migrations\202106061121418_createdb4.resx">
+      <DependentUpon>202106061121418_createdb4.cs</DependentUpon>
     </EmbeddedResource>
   </ItemGroup>
   <PropertyGroup>
