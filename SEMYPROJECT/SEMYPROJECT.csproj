@@ -129,6 +129,10 @@
     <Compile Include="App_Start\RouteConfig.cs" />
     <Compile Include="Areas\Area1st\Area1stAreaRegistration.cs" />
     <Compile Include="Areas\Area1st\Controllers\TestinfoController.cs" />
+    <Compile Include="Areas\Area2nd\Area2ndAreaRegistration.cs" />
+    <Compile Include="Areas\Area2nd\Controllers\StudentsController.cs" />
+    <Compile Include="Areas\Remote\Controllers\StudentsController.cs" />
+    <Compile Include="Areas\Remote\RemoteAreaRegistration.cs" />
     <Compile Include="Controllers\HomeController.cs" />
     <Compile Include="Global.asax.cs">
       <DependentUpon>Global.asax</DependentUpon>
@@ -153,8 +157,12 @@
     <Compile Include="Migrations\202106061121418_createdb4.designer.cs">
       <DependentUpon>202106061121418_createdb4.cs</DependentUpon>
     </Compile>
+    <Compile Include="Migrations\202106071926525_createdb5.cs" />
+    <Compile Include="Migrations\202106071926525_createdb5.designer.cs">
+      <DependentUpon>202106071926525_createdb5.cs</DependentUpon>
+    </Compile>
     <Compile Include="Migrations\Configuration.cs" />
-    <Compile Include="Migrations\TestDbInitialization.cs" />
+    <Compile Include="App_Code\TestDbInitialization.cs" />
     <Compile Include="Models\Author.cs" />
     <Compile Include="Models\BookCategory.cs" />
     <Compile Include="Models\BookInfo.cs" />
@@ -252,6 +260,15 @@
     <Content Include="Areas\Area1st\Views\Testinfo\AjaxOrNonAjax.cshtml" />
     <Content Include="Areas\Area1st\Views\Testinfo\Page.cshtml" />
     <Content Include="Areas\Area1st\Views\Testinfo\AjaxDemo.cshtml" />
+    <Content Include="Areas\Area2nd\Views\web.config" />
+    <Content Include="Areas\Area2nd\Views\_ViewStart.cshtml" />
+    <Content Include="Areas\Area2nd\Views\Shared\_Layout.cshtml" />
+    <Content Include="Areas\Area2nd\Views\Students\Create.cshtml" />
+    <Content Include="Areas\Area2nd\Views\Students\Delete.cshtml" />
+    <Content Include="Areas\Area2nd\Views\Students\Details.cshtml" />
+    <Content Include="Areas\Area2nd\Views\Students\Edit.cshtml" />
+    <Content Include="Areas\Area2nd\Views\Students\Index.cshtml" />
+    <Content Include="Areas\Remote\Views\web.config" />
     <None Include="Scripts\jquery-3.3.1.intellisense.js" />
     <Content Include="Scripts\bootstrap.js">
       <CopyToOutputDirectory>Always</CopyToOutputDirectory>
@@ -301,9 +318,12 @@
     <Content Include="Views\Home\DisplayRouteInfo.cshtml" />
   </ItemGroup>
   <ItemGroup>
-    <Folder Include="App_Code\" />
     <Folder Include="App_Data\" />
     <Folder Include="Areas\Area1st\Models\" />
+    <Folder Include="Areas\Area2nd\Models\" />
+    <Folder Include="Areas\Remote\Models\" />
+    <Folder Include="Areas\Remote\Views\Shared\" />
+    <Folder Include="Areas\Remote\Views\Students\" />
   </ItemGroup>
   <ItemGroup>
     <None Include="packages.config" />
@@ -325,6 +345,9 @@
     </EmbeddedResource>
     <EmbeddedResource Include="Migrations\202106061121418_createdb4.resx">
       <DependentUpon>202106061121418_createdb4.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Migrations\202106071926525_createdb5.resx">
+      <DependentUpon>202106071926525_createdb5.cs</DependentUpon>
     </EmbeddedResource>
   </ItemGroup>
   <PropertyGroup>

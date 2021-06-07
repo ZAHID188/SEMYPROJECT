@@ -1,0 +1,106 @@
+﻿@model SEMYPROJECT.Models.Student
+
+@{
+    ViewBag.Title = "Details";
+}
+
+<h2>Details</h2>
+
+<div>
+    <h4>Student</h4>
+    <hr />
+    <dl class="dl-horizontal">
+        <dt>
+            @Html.DisplayNameFor(model => model.Class.ClassName)
+        </dt>
+
+        <dd>
+            @Html.DisplayFor(model => model.Class.ClassName)
+        </dd>
+
+        <dt>
+            @Html.DisplayNameFor(model => model.County.CountyName)
+        </dt>
+
+        <dd>
+            @Html.DisplayFor(model => model.County.CountyName)
+        </dd>
+
+        <dt>
+            @Html.DisplayNameFor(model => model.Gender.GenderName)
+        </dt>
+
+        <dd>
+            @Html.DisplayFor(model => model.Gender.GenderName)
+        </dd>
+
+        <dt>
+            @Html.DisplayNameFor(model => model.SName)
+        </dt>
+
+        <dd>
+            @Html.DisplayFor(model => model.SName)
+        </dd>
+
+        <dt>
+            @Html.DisplayNameFor(model => model.BornDate)
+        </dt>
+
+        <dd>
+            @Html.DisplayFor(model => model.BornDate)
+        </dd>
+
+        <dt>
+            @Html.DisplayNameFor(model => model.QQ)
+        </dt>
+
+        <dd>
+            @Html.DisplayFor(model => model.QQ)
+        </dd>
+
+        <dt>
+            @Html.DisplayNameFor(model => model.Phone)
+        </dt>
+
+        <dd>
+            @Html.DisplayFor(model => model.Phone)
+        </dd>
+
+        <dt>
+            @Html.DisplayNameFor(model => model.Email)
+        </dt>
+
+        <dd>
+            @Html.DisplayFor(model => model.Email)
+        </dd>
+
+        <dt>
+            @Html.DisplayNameFor(model => model.AvatarPath)
+        </dt>
+
+        <dd>
+            @Html.DisplayFor(model => model.AvatarPath)
+        </dd>
+
+        <dt>
+            @Html.DisplayNameFor(model => model.PhotoData)
+        </dt>
+
+        <dd>
+            @Html.DisplayFor(model => model.PhotoData)
+        </dd>
+
+        <dt>
+            @Html.DisplayNameFor(model => model.PhotoMimeType)
+        </dt>
+
+        <dd>
+            @Html.DisplayFor(model => model.PhotoMimeType)
+        </dd>
+
+    </dl>
+</div>
+<p>
+    @Html.ActionLink("Edit", "Edit", new { id = Model.SNo }) |
+    @Html.ActionLink("Back to List", "Index")
+</p>
