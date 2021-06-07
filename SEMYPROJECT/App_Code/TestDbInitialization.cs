@@ -5,7 +5,7 @@ using System.Data.Entity; // DropCreateDatabaseAlways<DbContext>
 using System.Linq;
 using System.Web;
 
-namespace SEMYPROJECT.Models
+namespace SEMYPROJECT.App_Code
 {
   //ALT+Enter for twice! using two namespaces!
   public class TestDbInitialization : DropCreateDatabaseAlways<TestDbContext>
