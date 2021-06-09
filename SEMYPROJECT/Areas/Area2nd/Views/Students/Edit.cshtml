@@ -1,20 +1,42 @@
-﻿@model SEMYPROJECT.Models.Student
+﻿@*  @model SEMYPROJECT.Models.Student   *@
+@model SEMYPROJECT.ViewModels.EditableStudent
 
-@{
-    ViewBag.Title = "Edit";
+@* @{
+        ViewBag.Title = "Edit";
+    }
+
+    <h2>Edit</h2>
+
+*@
+
+@if (Model.SNo == null)
+{
+    ViewBag.Title = "Create Student";
+}
+else
+{
+    ViewBag.Title = $"Edit Student for {Model.SName}";
 }
 
-<h2>Edit</h2>
+<h2>@ViewBag.Title</h2>
 
-@using (Html.BeginForm())
+@*★ We have two image files for Avatar and Photo to upload,
+      new { enctype = "multipart/form-data" }
+    ★*@
+@using (Ajax.BeginForm("Edit", "Students", FormMethod.Post, TempData["AjaxOptions"] as AjaxOptions, new { enctype = "multipart/form-data" }))
 {
     @Html.AntiForgeryToken()
-    
-    <div class="form-horizontal">
-        <h4>Student</h4>
-        <hr />
-        @Html.ValidationSummary(true, "", new { @class = "text-danger" })
-        @Html.HiddenFor(model => model.SNo)
+
+
+<div class="form-horizontal">
+    @*<h4>Student</h4>*@
+    <hr />
+    @Html.ValidationSummary(true, "", new { @class = "text-danger" })
+    @*@Html.HiddenFor(model => model.SNo)*@
+
+    @*for both edit and create*@
+    @if (ViewBag.Title == "Create Student") //Model.SNo == null
+    {
 
         <div class="form-group">
             @Html.LabelFor(model => model.SName, htmlAttributes: new { @class = "control-label col-md-2" })

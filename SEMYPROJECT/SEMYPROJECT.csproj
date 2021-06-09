@@ -161,6 +161,14 @@
     <Compile Include="Migrations\202106071926525_createdb5.designer.cs">
       <DependentUpon>202106071926525_createdb5.cs</DependentUpon>
     </Compile>
+    <Compile Include="Migrations\202106090401352_6june.cs" />
+    <Compile Include="Migrations\202106090401352_6june.designer.cs">
+      <DependentUpon>202106090401352_6june.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Migrations\202106090405286_createdb6.cs" />
+    <Compile Include="Migrations\202106090405286_createdb6.designer.cs">
+      <DependentUpon>202106090405286_createdb6.cs</DependentUpon>
+    </Compile>
     <Compile Include="Migrations\Configuration.cs" />
     <Compile Include="App_Code\TestDbInitialization.cs" />
     <Compile Include="Models\Author.cs" />
@@ -188,6 +196,7 @@
     <Compile Include="Models\YzuSchool.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
     <Compile Include="Public\VirtualPathStrings.cs" />
+    <Compile Include="ViewModels\EditableStudent.cs" />
   </ItemGroup>
   <ItemGroup>
     <Content Include="Content\bootstrap-theme.css" />
@@ -263,7 +272,7 @@
     <Content Include="Areas\Area2nd\Views\web.config" />
     <Content Include="Areas\Area2nd\Views\_ViewStart.cshtml" />
     <Content Include="Areas\Area2nd\Views\Shared\_Layout.cshtml" />
-    <Content Include="Areas\Area2nd\Views\Students\Create.cshtml" />
+    <None Include="Areas\Area2nd\Views\Students\Create.cshtml.bak" />
     <Content Include="Areas\Area2nd\Views\Students\Delete.cshtml" />
     <Content Include="Areas\Area2nd\Views\Students\Details.cshtml" />
     <Content Include="Areas\Area2nd\Views\Students\Edit.cshtml" />
@@ -324,6 +333,7 @@
     <Folder Include="Areas\Remote\Models\" />
     <Folder Include="Areas\Remote\Views\Shared\" />
     <Folder Include="Areas\Remote\Views\Students\" />
+    <Folder Include="Upload\" />
   </ItemGroup>
   <ItemGroup>
     <None Include="packages.config" />
@@ -348,6 +358,12 @@
     </EmbeddedResource>
     <EmbeddedResource Include="Migrations\202106071926525_createdb5.resx">
       <DependentUpon>202106071926525_createdb5.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Migrations\202106090401352_6june.resx">
+      <DependentUpon>202106090401352_6june.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Migrations\202106090405286_createdb6.resx">
+      <DependentUpon>202106090405286_createdb6.cs</DependentUpon>
     </EmbeddedResource>
   </ItemGroup>
   <PropertyGroup>
