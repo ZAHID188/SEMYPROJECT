@@ -169,6 +169,10 @@
     <Compile Include="Migrations\202106090405286_createdb6.designer.cs">
       <DependentUpon>202106090405286_createdb6.cs</DependentUpon>
     </Compile>
+    <Compile Include="Migrations\202106101920439_createdb7.cs" />
+    <Compile Include="Migrations\202106101920439_createdb7.designer.cs">
+      <DependentUpon>202106101920439_createdb7.cs</DependentUpon>
+    </Compile>
     <Compile Include="Migrations\Configuration.cs" />
     <Compile Include="App_Code\TestDbInitialization.cs" />
     <Compile Include="Models\Author.cs" />
@@ -364,6 +368,9 @@
     </EmbeddedResource>
     <EmbeddedResource Include="Migrations\202106090405286_createdb6.resx">
       <DependentUpon>202106090405286_createdb6.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Migrations\202106101920439_createdb7.resx">
+      <DependentUpon>202106101920439_createdb7.cs</DependentUpon>
     </EmbeddedResource>
   </ItemGroup>
   <PropertyGroup>

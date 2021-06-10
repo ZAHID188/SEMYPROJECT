@@ -262,6 +262,27 @@ namespace SEMYPROJECT.Areas.Area2nd.Controllers
             db.SaveChanges();
             return RedirectToAction("Index");
         }
+        /// <summary>
+        /// Used in Edit.cshtml for access the binary data of the Photo.
+        ///  We can access it by:
+        ///  @Url.Action("GetPhoto")  OR @Html.Action("GetPhoto")
+        /// </summary>
+        /// <param name="id"></param>
+        /// <returns></returns>
+        //[ChildActionOnly] //leads to the failure of loading Photo!
+
+        [AllowAnonymous] //no need to login
+        public FileContentResult GetPhoto(string id)
+        {
+            Student student = db.Students.FirstOrDefault(s => s.SNo == id);
+            if(student != null)
+            {
+                byte[] arr = student.PhotoData;
+                if (arr != null)
+                    return File(student.PhotoData, student.PhotoMimeType);
+            }
+            return null;
+        }
 
         protected override void Dispose(bool disposing)
         {
