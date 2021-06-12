@@ -5,6 +5,8 @@ using System.Data.Entity; // DropCreateDatabaseAlways<DbContext>
 using System.Linq;
 using System.Web;
 
+// Entityvalidation error means- check the entity model in the models check key conditions[maxlength] like this
+
 namespace SEMYPROJECT.App_Code
 {
   //ALT+Enter for twice! using two namespaces!
