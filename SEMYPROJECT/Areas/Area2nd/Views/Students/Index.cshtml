@@ -38,12 +38,12 @@ s
         <th>
             @Html.DisplayNameFor(model => model.AvatarPath)
         </th>
-        <th>
+        @* <th>
             @Html.DisplayNameFor(model => model.PhotoData)
         </th>
         <th>
             @Html.DisplayNameFor(model => model.PhotoMimeType)
-        </th>
+        </th>*@
         <th></th>
     </tr>
 
@@ -73,7 +73,7 @@ s
         <td>
             @Html.DisplayFor(modelItem => item.Email)
         </td>
-        <td>
+        @* <td>
             @Html.DisplayFor(modelItem => item.AvatarPath)
         </td>
         <td>
@@ -82,10 +82,24 @@ s
         <td>
             @Html.DisplayFor(modelItem => item.PhotoMimeType)
         </td>
+        *@
         <td>
-            @Html.ActionLink("Edit", "Edit", new { id=item.SNo }) |
-            @Html.ActionLink("Details", "Details", new { id=item.SNo }) |
-            @Html.ActionLink("Delete", "Delete", new { id=item.SNo })
+            @if (item.AvatarPath == null)
+            {
+                <img alt="N/A" />
+            }
+            else
+            {
+                @*@Html.DisplayFor(modelItem => item.AvatarPath)*@
+                @*<img src="~/Upload/@Html.DisplayFor(modelItem => item.AvatarPath)" style="width:48px;height:60px;" alt="N/A" />*@
+                <img src="~/Upload/@item.AvatarPath" style="width:48px;height:60px;" alt="N/A" />
+            }
+
+        </td>
+        <td>
+            @Html.ActionLink("Edit", "Edit", new { id = item.SNo }) 
+            @Html.ActionLink("Details", "Details", new { id = item.SNo }) 
+            @Html.ActionLink("Delete", "Delete", new { id = item.SNo })
         </td>
     </tr>
 }

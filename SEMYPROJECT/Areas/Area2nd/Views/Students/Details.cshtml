@@ -79,7 +79,17 @@
         </dt>
 
         <dd>
-            @Html.DisplayFor(model => model.AvatarPath)
+            @*@Html.DisplayFor(model => model.AvatarPath)*@
+
+            @if (Model.AvatarPath != null)
+            {
+                <img class="thumbnail" src="~/Upload/@Model.AvatarPath" width="64" height="80" alt="N/A" />
+            }
+            else
+            {
+                <label class="text-danger">No Avatar Image!</label>
+            }
+
         </dd>
 
         <dt>
@@ -87,16 +97,17 @@
         </dt>
 
         <dd>
-            @Html.DisplayFor(model => model.PhotoData)
+            @*@Html.DisplayFor(model => model.PhotoData)*@
+            <img class="thumbnail" width="64" height="80" src="@Url.Action("GetPhoto", new { id = Model.SNo })" alt="N/A" />
         </dd>
 
-        <dt>
-            @Html.DisplayNameFor(model => model.PhotoMimeType)
-        </dt>
+        @*<dt>
+                @Html.DisplayNameFor(model => model.PhotoMimeType)
+            </dt>
 
-        <dd>
-            @Html.DisplayFor(model => model.PhotoMimeType)
-        </dd>
+            <dd>
+                @Html.DisplayFor(model => model.PhotoMimeType)
+            </dd>*@
 
     </dl>
 </div>
@@ -104,3 +115,38 @@
     @Html.ActionLink("Edit", "Edit", new { id = Model.SNo }) |
     @Html.ActionLink("Back to List", "Index")
 </p>
+
+
+
+@*
+            <dt>
+                @Html.DisplayNameFor(model => model.AvatarPath)
+            </dt>
+
+            <dd>
+                @Html.DisplayFor(model => model.AvatarPath)
+            </dd>
+
+            <dt>
+                @Html.DisplayNameFor(model => model.PhotoData)
+            </dt>
+
+            <dd>
+                @Html.DisplayFor(model => model.PhotoData)
+            </dd>
+
+            <dt>
+                @Html.DisplayNameFor(model => model.PhotoMimeType)
+            </dt>
+
+            <dd>
+                @Html.DisplayFor(model => model.PhotoMimeType)
+            </dd>
+
+        </dl>
+    </div>
+    <p>
+        @Html.ActionLink("Edit", "Edit", new { id = Model.SNo }) |
+        @Html.ActionLink("Back to List", "Index")
+    </p>
+*@

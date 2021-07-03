@@ -1,0 +1,116 @@
+﻿@model IEnumerable<SE2018.Models.Student>
+
+@{
+  ViewBag.Title = "Index";
+}
+
+<h2>Index</h2>
+
+@if (!Request.IsAjaxRequest())
+{
+  <p>
+    @Html.ActionLink("Create New", "Create")
+  </p>
+}
+<div id="ajaxdiv">
+
+  <table class="table">
+    <tr>
+      <th>
+        @Html.DisplayNameFor(model => model.Class.ClassName)
+      </th>
+      <th>
+        @*@Html.DisplayNameFor(model => model.County.CountyName)*@
+        @Html.DisplayName("籍贯")
+      </th>
+      <th>
+        @Html.DisplayNameFor(model => model.Gender.GenderName)
+      </th>
+      <th>
+        @Html.DisplayNameFor(model => model.SName)
+      </th>
+      <th>
+        @Html.DisplayNameFor(model => model.BornDate)
+      </th>
+      <th>
+        @Html.DisplayNameFor(model => model.QQ)
+      </th>
+      <th>
+        @Html.DisplayNameFor(model => model.Phone)
+      </th>
+      <th>
+        @Html.DisplayNameFor(model => model.Email)
+      </th>
+      <th>
+        @Html.DisplayNameFor(model => model.AvatarPath)
+      </th>
+      @*<th>
+          @Html.DisplayNameFor(model => model.PhotoData)
+        </th>
+        <th>
+          @Html.DisplayNameFor(model => model.PhotoMimeType)
+        </th>*@
+      <th></th>
+    </tr>
+
+    @foreach (var item in Model)
+    {
+      <tr>
+        <td>
+          @Html.DisplayFor(modelItem => item.Class.ClassName)
+        </td>
+        <td>
+          @Html.DisplayFor(modelItem => item.County.City.Province.ProvinceName)<br />
+          @Html.DisplayFor(modelItem => item.County.CountyName)
+        </td>
+        <td>
+          @Html.DisplayFor(modelItem => item.Gender.GenderName)
+        </td>
+        <td>
+          @Html.DisplayFor(modelItem => item.SName)
+        </td>
+        <td>
+          @Html.DisplayFor(modelItem => item.BornDate)
+        </td>
+        <td>
+          @Html.DisplayFor(modelItem => item.QQ)
+        </td>
+        <td>
+          @Html.DisplayFor(modelItem => item.Phone)
+        </td>
+        <td>
+          @Html.DisplayFor(modelItem => item.Email)
+        </td>
+        <td>
+          @if (item.AvatarPath == null)
+          {
+            <img alt="N/A" />
+          }
+          else
+          {
+            @*@Html.DisplayFor(modelItem => item.AvatarPath)*@
+            @*<img src="~/Upload/@Html.DisplayFor(modelItem => item.AvatarPath)" style="width:48px;height:60px;" alt="N/A" />*@
+            <img src="~/Upload/@item.AvatarPath" style="width:48px;height:60px;" alt="N/A" />
+          }
+
+        </td>
+        @*<td>
+            @Html.DisplayFor(modelItem => item.PhotoData)
+          </td>
+          <td>
+            @Html.DisplayFor(modelItem => item.PhotoMimeType)
+          </td>*@
+        <td>
+          @Html.ActionLink("Edit", "Edit", new { id = item.SNo }) |
+          @Html.ActionLink("Details", "Details", new { id = item.SNo }) |
+          @Html.ActionLink("Delete", "Delete", new { id = item.SNo })
+        </td>
+      </tr>
+    }
+
+  </table>
+  <div class="row">
+    @Ajax.PagingNavigator("ajaxdiv", null)
+  </div>
+
+</div>
